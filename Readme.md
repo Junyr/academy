@@ -1,7 +1,7 @@
 # Projeto Academia - API REST com Versionamento
 
-Este projeto implementa uma **API REST** para o gerenciamento de uma academia, incluindo controle de **alunos**, **planos**, **treinos**, **exercícios** e **pagamentos**.
-O sistema foi desenvolvido em **Spring Boot** com versionamento de APIs e documentação via **Swagger**.
+Este projeto implementa uma **API REST** para o gerenciamento de uma academia, incluindo controle de **alunos**, **planos**, **treinos**, **exercícios** e **pagamentos**.  
+O sistema foi desenvolvido em **Spring Boot** com versionamento de APIs e documentação via **Swagger**.  
 
 Tecnologias utilizadas:
 - Java 21
@@ -21,16 +21,14 @@ Recomendação de ordem para criação:
 4. Aluno
 5. Pagamento
 
-Exercicio pertence a Treino
-Treino pertence a Aluno
-Plano pertence a Aluno
-Pagamento pertence a Aluno
-
+Exercicio pertence a Treino  
+Treino pertence a Aluno  
+Plano pertence a Aluno  
+Pagamento pertence a Aluno  
+  
 OBS: Não possui validações personalizadas
 
 ---
-
-## Endpoints da API
 
 ## Endpoints da API
 
@@ -55,7 +53,7 @@ OBS: Não possui validações personalizadas
 
 ---
 
-### 🏋️ Exercícios
+### Exercícios
 
 | Método | Endpoint                      | Descrição                                    |
 | :----: | :---------------------------- | :------------------------------------------- |
@@ -66,7 +64,7 @@ OBS: Não possui validações personalizadas
 
 ---
 
-### 💳 Pagamentos
+### Pagamentos
 
 #### v1
 
@@ -85,7 +83,7 @@ OBS: Não possui validações personalizadas
 
 ---
 
-### 📦 Planos
+### Planos
 
 | Método | Endpoint                  | Descrição                   |
 | :----: | :------------------------ | :-------------------------- |
@@ -97,7 +95,7 @@ OBS: Não possui validações personalizadas
 
 ---
 
-### 🏃 Treinos
+### Treinos
 
 | Método | Endpoint                   | Descrição                    |
 | :----: | :------------------------- | :--------------------------- |
@@ -106,40 +104,3 @@ OBS: Não possui validações personalizadas
 |  POST  | /v1/treinos/adicionar      | Cria um novo treino          |
 |   PUT  | /v1/treinos/atualizar/{id} | Atualiza um treino existente |
 | DELETE | /v1/treinos/deletar/{id}   | Deleta um treino             |
-
-
----
-
-## Prints dos Endpoints Testados (Swagger)
-
-Abaixo estão exemplos de testes realizados via **Swagger UI**.
-
-### 🔹 Alunos
-
-![Listar Alunos](docs/swagger/alunos-listar.png)
-![Adicionar Aluno](docs/swagger/alunos-adicionar.png)
-
-### 🔹 Treinos
-
-![Listar Treinos](docs/swagger/treinos-listar.png)
-![Adicionar Treino](docs/swagger/treinos-adicionar.png)
-
-### 🔹 Exercícios
-
-![Listar Exercícios](docs/swagger/exercicios-listar.png)
-![Adicionar Exercício](docs/swagger/exercicios-adicionar.png)
-
-### 🔹 Planos
-
-![Listar Planos](docs/swagger/planos-listar.png)
-![Adicionar Plano](docs/swagger/planos-adicionar.png)
-
-### 🔹 Pagamentos
-
-![Listar Pagamentos](docs/swagger/pagamentos-listar.png)
-![Pagar Pagamento](docs/swagger/pagamentos-pagar.png)
-
----
-
-📂 **Dica:**
-Salve os prints dentro de `docs/swagger/` no projeto e nomeie conforme os exemplos acima para manter a organização.
