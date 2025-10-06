@@ -21,10 +21,10 @@ Recomendação de ordem para criação:
 4. Aluno
 5. Pagamento
 
-Exercicio pertence a Treino  
-Treino pertence a Aluno  
-Plano pertence a Aluno  
-Pagamento pertence a Aluno  
+Aluno --> Plano : possui  
+Aluno --> Treino : realiza  
+Aluno --> Pagamento : efetua  
+Treino --> Exercicio : contém  
   
 OBS: Não possui validações personalizadas
 
